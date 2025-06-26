@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2. Decimal number systems</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>1.2. Decimal number systems</h1>
+    </header>
+
+    <main>
+        <p>
+            <time datetime="2025-06-16">16/06/2025</time>
+        </p>
+
+        <h2>Definition</h2>
+        <p>
+            It is the base 10 system, meaning that to represent any number in this system, we have 10 digits at our disposal, which are called <strong>numerals</strong>. The numerals are: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. The digit 0 (zero) is the only one considered <strong>non-significant</strong>, while the others are called <strong>significant</strong>.
+        </p>
+        <aside>
+            <strong>Numeral</strong>:  A numeral is a class of word used to indicate quantity, order, fraction, or multiplication of beings or things.
+        </aside>
+
+        <h2>"Absolute value" and "Relative value"</h2>
+        <ul>
+            <li>The <strong>absolute value</strong> of a digit is the digit itself, regardless of the position it occupies in the given number. </li>
+            <li>The <strong>relative value</strong>, on the other hand, depends on the position of the digit within the number.</li>
+        </ul>
+
+        <p><strong>Examples</strong></p>
+        <blockquote>
+            <ul>
+                <li>In the number 572, the absolute values of the digits 5, 7 and 2 are respectively 5, 7 and 2.</li>
+                <li>Since: 572 = 500 + 70 + 2, we have that the relative value of the digit 5 is 500.</li>
+            </ul>
+            <footer>
+                <em>TQM - Ensino Fundamental, chapter 2, page 4.</em>
+            </footer>
+        </blockquote>
+
+        <h2>Classes and orders</h2>
+        <table>
+            <caption>Classes and orders</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Periods</th>
+                    <th scope="col">Order</th>
+                    <th scope="col">Power of 10</th>
+                    <th scope="col">Example digit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Millions</th>
+                    <td>Hundred million</td>
+                    <td>10<sup>8</sup></td>
+                    <td>100,000,000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Ten million</td>
+                    <td>10<sup>7</sup></td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Million</td>
+                    <td>10<sup>6</sup></td>
+                    <td>1,000,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thousands</th>
+                    <td>Hundred thousand</td>
+                    <td>10<sup>5</sup></td>
+                    <td>100,000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Ten thousand</td>
+                    <td>10<sup>4</sup></td>
+                    <td>10,000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Thousand</td>
+                    <td>10<sup>3</sup></td>
+                    <td>1,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Units (Simple)</th>
+                    <td>Hundred</td>
+                    <td>10<sup>2</sup></td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Ten</td>
+                    <td>10<sup>1</sup></td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Unit</td>
+                    <td>10<sup>0</sup></td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <strong>Principle of Decimal Position</strong>: "Each ten units of an order form one unit of the immediately higher order."
+        </p>
+
+        <h2>Decomposition of a number in the decimal system</h2>
+        <p>
+            Any number written in the decimal system can be decomposed into the sum of the products of the digits that compose it, ordered from right to left, by increasing powers of 10, always starting with power 10<sup>0</sup>.
+        </p>
+        
+        <p><strong>Examples</strong></p>
+        <figure>
+            <img src="../assets/1-2-Decimal-number-system/1-Examples-decomposition.png" alt="Two examples showing how to express numbers as sums of powers of 10. Example a: 7839 equals 7 times 10 to the power of 3, plus 8 times 10 to the power of 2, plus 3 times 10 to the power of 1, plus 9 times 10 to the power of 0. Example b: A general form, xyz equals x times 10 to the power of 2, plus y times 10 to the power of 1, plus z times 10 to the power of 0.">
+            <figcaption><em>TQM - Ensino Fundamental, chapter 2, page 4.</em></figcaption>
+        </figure>
+
+        <h2>Roman numerals</h2>
+        <p>
+            The Roman numeral system uses the following digits:
+        </p>
+
+        <ul>
+            <li>I = 1</li>
+            <li>V = 5</li>
+            <li>X = 10</li>
+            <li>L = 50</li>
+            <li>C = 100</li>
+            <li>D = 500</li>
+            <li>M = 1000</li>
+        </ul>
+
+        <p>
+            To convert a number written in Roman numerals to decimal numeration or vice versa, we need to familiarize ourselves with some details and properties, which we will cover below:
+        </p>
+
+        <p><strong>Properties</strong></p>
+        <ol>
+            <li>
+                Reading direction is from left to right.
+            </li>
+            <li>
+                If the next number is less than or equal to the current one, you add them.
+                <br>
+                <strong>Example</strong>: MD = 1000(M) + 500(D) = 1500
+            </li>
+            <li>
+                If the next number is greater than the current one, you subtract the current from the next.
+                <br>
+                <strong>Example</strong>: CM = 1000 (M) - 100(C) = 900
+            </li>
+            <li>
+                Only digits associated with powers of 10 (I, X, C  and M) may appear repeated, at most three times in a row.
+                <br>
+                <strong>Example</strong>: MMMDCVII = 3607
+            </li>
+            <li>
+                Each bar placed over a group of digits multiplies the value of that group by 1000.
+                <br>
+                <strong>Example</strong>: VII CCXXXV = 7235
+            </li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>Recommended content:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G4doTGQPRPw?si=d7mreHJEnt4QQ0A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+</body>
+</html>

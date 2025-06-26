@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1. Number Systems</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>1.1. Number systems</h1>
+    </header>
+    
+    <main>
+        <p>
+            <time datetime="2025-06-25">06/25/2025</time>
+        </p>
+
+        <h2>Common Number Systems</h2>
+        <p>
+            Every number system must have the digit 1 (one).
+        </p>
+        <dl>
+            <dt>a) <strong>Binary system</strong> (base 2)</dt>
+            <dd>
+                Possesses two digits: 0, 1.
+            </dd>
+
+            <dt>b) <strong>Ternary system</strong> (base 3)</dt>
+            <dd>
+                Possesses three digits: 0, 1, 2.
+            </dd>
+
+            <dt>c) <strong>Decimal system</strong> (base 10)</dt>
+            <dd>
+                Possesses ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+                <br>
+                In this case, each digit is called a numeral.
+            </dd>
+
+            <dt>d) <strong>Base 11 system</strong></dt>
+            <dd>
+                Possesses eleven digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A.
+                <br>
+                In this case, A = 10.
+            </dd>
+
+            <dt>e) <strong>Base 12 system</strong></dt>
+            <dd>
+                Possesses twelve digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B.
+                <br>
+                In this case, A = 10, B = 11.
+            </dd>
+
+            <dt>f) <strong>Hexadecimal system</strong> (base 16)</dt>
+            <dd>
+                Possesses sixteen digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+                <br>
+                In this case, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
+            </dd>
+        </dl>
+
+        <h2>Base conversion</h2>
+        <p>
+            To simplify the explanation, we will call <em>Any base</em> any base different from <em>Base 10</em>.
+        </p>
+
+        <h3>Case 1: From Base 10 to Any base</h3>
+        <p>
+            Divide the number in <strong>Base 10</strong> by the <strong>Any base</strong> until the remainder of the division is less than the <strong>Any base</strong>, then write the remainders in the reverse order of how they were found.
+        </p>
+        
+        <p><strong>Example</strong>:</p>
+        <figure>
+            <img src="../assets/1-1-Number-systems/1-Example-Base-10-to-base-3.png" alt="Step-by-step example converting the decimal number 72 to base 3. First, 72 divided by 3 is 24 with remainder 0. Then, 24 divided by 3 is 8 with remainder 0. Next, 8 divided by 3 is 2 with remainder 2. Finally, 2 divided by 3 is 0 with remainder 2. Reading the remainders from bottom to top gives 2, 2, 0, 0. Therefore, 72 in base 10 is written as 2200 in base 3.">
+            <figcaption><em>TQM - Ensino Fundamental, chapter 1, page 1.</em></figcaption>
+        </figure>
+        <p>
+            <strong>Note</strong>: When a number is in any base, it should be written in parentheses, with the base indicated to the right and below the second parenthesis. In the case of base 10, this procedure is not necessary.
+        </p>
+
+        <h3>Any base to Base 10</h3>
+        <p>
+            You must multiply the first digit of the <strong>Any base</strong> number by the value of the base and then add the second digit. Take this result and then multiply again by the base value and add the 3rd digit of the number. This must be repeated until the last digit on the right.
+        </p>
+
+        <p><strong>Examples</strong>:</p>
+        <figure>
+            <img src="../assets/1-1-Number-systems/2-Example-Any-base-to-base-10.png" alt="Two examples converting numbers from other bases to base 10. Example a: Convert the number 1223 in base 4 to base 10. Step 1: 1 times 4 equals 4. Step 2: 4 plus 2 equals 6, then 6 times 4 equals 24. Step 3: 24 plus 2 equals 26, then 26 times 4 equals 104. Step 4: 104 plus 3 equals 107. So, 1223 in base 4 equals 107 in base 10. Example b: Convert the number A25 in base 11 to base 10. A is equal to 10. Step 1: 10 times 11 equals 110. Step 2: 110 plus 2 equals 112, then 112 times 11 equals 1232. Step 3: 1232 plus 5 equals 1237. So, A25 in base 11 equals 1237 in base 10.">
+            <figcaption><em>TQM - Ensino Fundamental, chapter 1, page 1.</em></figcaption>
+        </figure>
+
+        <details>
+            <summary>Converting through decomposition</summary>
+            <p>
+                Simply multiply each digit of the number, in order from right to left, by increasing powers of the given base (always starting at power 0).  
+            </p>
+            <blockquote>
+                <ul>
+                    <li>a) (3542)<sub>6</sub> = 3 x 6<sup>3</sup> + 5 x 6<sup>2</sup> + 2 x 6<sup>1</sup> + 2 x 6<sup>0</sup> = 854</li>
+                    <li>b) (abc)<sub>8</sub> = a x 8<sup>2</sup> + b x 8<sup>1</sup> + c x 8<sup>0</sup> = 64a + 8b + c</li>
+                </ul>
+                <footer><em>TQM - Ensino Fundamental, chapter 2, page 4.</em></footer>
+            </blockquote>
+        </details>
+
+        <h3>Any base to Any base</h3>
+        <p>
+            There is no method that allows us to do this conversion directly; it is necessary to first convert to base 10, and then to the desired base.
+        </p>
+    </main>
+
+    <footer>
+        <p>Recommended contents:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cZH0YnFpjwU?si=aiILWhfOjSNPE3E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+</body>
+</html>
