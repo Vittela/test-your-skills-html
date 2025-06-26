@@ -1,6 +1,6 @@
 # HTML Practice – MDN First Module Exercise
 
-This page contains is my final test for the **first HTML module** from [MDN Web Docs](https://developer.mozilla.org/).
+This page contains the application from every **"Test your skills"** exercises from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills).
 The goal is to practice and demonstrate the use of various core HTML elements, including semantic structure and accessibility features.
 
 ---
