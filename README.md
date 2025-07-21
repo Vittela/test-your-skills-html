@@ -1,6 +1,7 @@
 # HTML Practice – MDN First Module Exercise
 
-This page contains the solution to each 'Test your skills' exercise from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills).
+This page contains the application of the knowledge from each exercise in the "Test your skills" module of the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills).
+
 The goal is to practice and demonstrate the use of various core HTML elements, including semantic structure and accessibility features.
 
 ---
@@ -31,14 +32,3 @@ The page must include the following:
 - ✅ Internal Links
 
 - ✅ External Links
-
-## Accessibility
-
-> All elements must include alternative text where applicable and follow accessibility best practices.
-
-This includes:
-
-* `alt` attributes for images
-* `aria-label` or `aria-describedby` for multimedia
-* Keyboard-navigable elements
-* Proper use of semantic tags for screen reader support
